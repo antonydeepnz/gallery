@@ -1,0 +1,78 @@
+h1,
+p {
+  font-family: Lato;
+}
+
+.bigImage {
+  height: 600px;
+  width: 800px;
+  background-color: beige;
+}
+
+.imagesList {
+  display: flex;
+  height: 120px;
+  width: 600px;
+}
+
+.image {
+  margin: 5px;
+  padding: 5px;
+  border: 1px solid grey;
+  border-radius: 5px;
+}
+
+.image:hover {
+  border-color: red;
+}
+
+.anotherGallery {
+  position: relative;
+  height: 188px;
+  width: 250px;
+}
+
+.anotherGalleryImage {
+  height: 100%;
+  width: 100%;
+}
+
+.anotherGalleryListofSelect {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+
+.anotherGallerySelect {
+  display: inline-block;
+  height: 100%;
+}
+
+.anotherGalleryListofDots {
+  position: absolute;
+  display: flex;
+  height: 5px;
+  width: 100%;
+  bottom: 10px;
+  left: 0;
+  opacity: 0;
+  z-index: 2;
+  transition: opacity 0.3s ease;
+}
+
+.anotherGalleryListofDotsActive {
+  opacity: 1;
+}
+
+.anotherGalleryDot {
+  height: 3px;
+  margin: 2px;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.anotherGalleryDotSelected {
+  background-color: rgba(255, 255, 255, 0.8);
+}
